@@ -1,3 +1,5 @@
+package Help_from_Ilya;
+
 public class Main {
     public static void main(String[] args) {
         Car car = new Car("car", 4);
@@ -9,13 +11,12 @@ public class Main {
         Bicycle bicycle = new Bicycle("bicycle", 2);
         Bicycle bicycle2 = new Bicycle("bicycle2", 2);
 
-        ServiceStation station = new AllMethod();
-        truck2.check(car);
-        car2.check(car2);
-        bicycle.check(bicycle);
-        bicycle2.check(bicycle2);
-        truck.check(truck);
-        truck2.check(truck2);
+        ServiceStation serviceStation = new ServiceStation();
+        serviceStation.check(bicycle);
+        serviceStation.check(bicycle2);
+        serviceStation.check(car);
+        serviceStation.check(car2);
+        serviceStation.check(truck);
+        serviceStation.check(truck2);
     }
 }
-
